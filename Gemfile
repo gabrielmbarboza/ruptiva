@@ -56,6 +56,7 @@ group :development do
 end
 
 group :test do
+  # Strategies for cleaning databases in Ruby. Can be used to ensure a clean state for testing. 
   gem 'database_cleaner'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
