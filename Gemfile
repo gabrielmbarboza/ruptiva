@@ -31,6 +31,9 @@ gem 'rack-cors'
 # Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth. 
 gem 'devise_token_auth'
 
+# Minimal authorization through OO design and pure Ruby classes 
+gem "pundit"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
