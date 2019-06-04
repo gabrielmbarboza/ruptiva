@@ -26,7 +26,7 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 # Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth. 
 gem 'devise_token_auth'
