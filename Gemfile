@@ -41,6 +41,9 @@ group :development, :test do
   # Makes tests easy on the fingers and the eyes
   gem 'shoulda', '~> 3.6'
 
+  # A library for setting up Ruby objects as test data.
+  gem 'factory_bot'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
