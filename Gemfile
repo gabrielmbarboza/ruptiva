@@ -32,18 +32,17 @@ gem 'rack-cors'
 gem 'devise_token_auth'
 
 # Minimal authorization through OO design and pure Ruby classes 
-gem "pundit"
+gem 'pundit'
 
 group :development, :test do
   # RSpec for Rails-3+
   gem 'rspec-rails', '~> 3.8'
-
   # Makes tests easy on the fingers and the eyes
   gem 'shoulda', '~> 3.6'
-
   # A library for setting up Ruby objects as test data.
   gem 'factory_bot'
-
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
