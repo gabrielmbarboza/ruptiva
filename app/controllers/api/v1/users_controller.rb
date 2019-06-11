@@ -1,7 +1,9 @@
 module Api
   module V1
     class UsersController < ApplicationController
+      before_action :authenticate_user!
       before_action :set_user, only: %i[show update destroy]
+      before_action { authorize User }
 
       # GET /api/v1/users
       def index
@@ -32,15 +34,15 @@ module Api
 
       # Use callbacks to share common setup or constraints between actions.
       def set_user
-        @user = User.find(params[:id])
+        @user = policy_scope(User).find(params[:id])
       end
         
-      def user_params(params)
+      def user_params
         if params[:user][:password].blank?
           params[:user].delete(:password)
           params[:user].delete(:password_confirmation)
         end
-        params.permit(:email, :role)
+        params.permit(:email, :first_name, :last_name, :role)
       end
     end
   end
