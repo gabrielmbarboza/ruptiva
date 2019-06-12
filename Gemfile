@@ -34,6 +34,9 @@ gem 'devise_token_auth'
 # Minimal authorization through OO design and pure Ruby classes 
 gem 'pundit'
 
+# ActiveModel::Serializer implementation and Rails hooks.
+gem 'active_model_serializers'
+
 group :development, :test do
   # RSpec for Rails-3+
   gem 'rspec-rails', '~> 3.8'
