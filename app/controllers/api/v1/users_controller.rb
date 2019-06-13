@@ -27,7 +27,7 @@ module Api
 
       # DELETE /api/v1/users/1
       def destroy
-        @user.destroy
+        @user.discard
       end
 
       private
